@@ -254,13 +254,6 @@ const PlaceOrder = () => {
               <button type="button" onClick={() => setSuccessInfo({ show: false, paymentId: "", orderId: "" })}>
                 Close
               </button>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 75c49a666787c79357325f140732950e0709225f
->>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
               <button
                 type="button"
                 onClick={() => navigate(`/order-status/${successInfo.orderId}`)}
@@ -268,14 +261,6 @@ const PlaceOrder = () => {
               >
                 Track Order
               </button>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 51974c875f20d5bb03c44be0f3765217cf54b45c
->>>>>>> 75c49a666787c79357325f140732950e0709225f
->>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
               <button type="button" onClick={() => navigate("/")}>
                 Go to Home
               </button>
