@@ -116,11 +116,8 @@
   overflow: hidden;
 }
 
-.ots-map-placeholder {
-  min-height: 230px;
-  background: radial-gradient(circle at 20% 25%, #ffe8d6 0%, transparent 40%),
-    radial-gradient(circle at 80% 15%, #ffe5d0 0%, transparent 35%),
-    linear-gradient(145deg, #f8e6d8 0%, #f3d7c2 100%);
+.ots-map-address {
+  max-width: 100%;
 }
 
 .ots-badge-soft {
@@ -129,20 +126,61 @@
   font-weight: 600;
 }
 
-.ots-icon-dot {
+.ots-map-frame-wrap {
+  position: relative;
+  min-height: 320px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(181, 71, 8, 0.12);
+}
+
+.ots-map-frame {
+  width: 100%;
+  height: 320px;
+  border: 0;
+  display: block;
+}
+
+.ots-map-overlay {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.85rem 1rem;
+  border-radius: 16px;
+  background: linear-gradient(90deg, rgba(124, 45, 18, 0.88), rgba(181, 71, 8, 0.75));
+  backdrop-filter: blur(8px);
+}
+
+.ots-map-pin {
   width: 42px;
   height: 42px;
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: #fff;
-  color: #b54708;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  font-size: 1.1rem;
+  flex-shrink: 0;
 }
 
 .ots-map-label {
   letter-spacing: 0.08em;
   color: #7c2d12;
+}
+
+.ots-map-link {
+  border-color: #f97316;
+  color: #b54708;
+}
+
+.ots-map-link:hover {
+  background: #f97316;
+  border-color: #f97316;
+  color: #fff;
 }
 
 .ots-badge-primary {
@@ -190,6 +228,19 @@
 @media (max-width: 768px) {
   .order-tracking-page {
     padding-top: 1rem;
+  }
+
+  .ots-map-frame-wrap,
+  .ots-map-frame {
+    min-height: 260px;
+    height: 260px;
+  }
+
+  .ots-map-overlay {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 0.75rem 0.85rem;
   }
 
   .ots-timeline-item > div:last-child {

@@ -18,12 +18,9 @@ public class Order {
     private BigDecimal deliveryFee;
     private BigDecimal total;
     private LocalDateTime placedAt;
-<<<<<<< HEAD
     private String deliveryPartnerName;
     private String deliveryPartnerPhone;
     private LocalDateTime estimatedDeliveryTime;
-=======
->>>>>>> 51974c875f20d5bb03c44be0f3765217cf54b45c
 
     public String getOrderId() {
         return orderId;
@@ -120,7 +117,6 @@ public class Order {
     public void setPlacedAt(LocalDateTime placedAt) {
         this.placedAt = placedAt;
     }
-<<<<<<< HEAD
 
     public String getDeliveryPartnerName() {
         return deliveryPartnerName;
@@ -145,6 +141,4 @@ public class Order {
     public void setEstimatedDeliveryTime(LocalDateTime estimatedDeliveryTime) {
         this.estimatedDeliveryTime = estimatedDeliveryTime;
     }
-=======
->>>>>>> 51974c875f20d5bb03c44be0f3765217cf54b45c
 }

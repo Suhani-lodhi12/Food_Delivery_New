@@ -5,7 +5,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
 
-    const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:8080";
+    const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:9090";
     const USER_ID = "u1";
 
     const [cartItems, setCartItems] = useState(() => {

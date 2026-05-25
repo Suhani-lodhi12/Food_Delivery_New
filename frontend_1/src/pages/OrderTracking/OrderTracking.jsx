@@ -114,7 +114,10 @@ const OrderTracking = () => {
             />
           </div>
           <div className="col-12 col-lg-6">
-            <MapPlaceholder orderStatus={orderData?.orderStatus} />
+            <MapPlaceholder
+              orderStatus={orderData?.orderStatus}
+              deliveryAddress={orderData?.deliveryAddress}
+            />
           </div>
 
           <div className="col-12 col-lg-7">
