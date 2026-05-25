@@ -116,8 +116,21 @@
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 .ots-map-address {
   max-width: 100%;
+=======
+<<<<<<< HEAD
+.ots-map-address {
+  max-width: 100%;
+=======
+.ots-map-placeholder {
+  min-height: 230px;
+  background: radial-gradient(circle at 20% 25%, #ffe8d6 0%, transparent 40%),
+    radial-gradient(circle at 80% 15%, #ffe5d0 0%, transparent 35%),
+    linear-gradient(145deg, #f8e6d8 0%, #f3d7c2 100%);
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
 }
 
 .ots-badge-soft {
@@ -126,6 +139,10 @@
   font-weight: 600;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
 .ots-map-frame-wrap {
   position: relative;
   min-height: 320px;
@@ -156,15 +173,33 @@
 }
 
 .ots-map-pin {
+<<<<<<< HEAD
+=======
+=======
+.ots-icon-dot {
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
   width: 42px;
   height: 42px;
   border-radius: 50%;
   display: grid;
   place-items: center;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
   background: rgba(255, 255, 255, 0.16);
   color: #fff;
   font-size: 1.1rem;
   flex-shrink: 0;
+<<<<<<< HEAD
+=======
+=======
+  background: #fff;
+  color: #b54708;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
 }
 
 .ots-map-label {
@@ -172,6 +207,10 @@
   color: #7c2d12;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
 .ots-map-link {
   border-color: #f97316;
   color: #b54708;
@@ -183,6 +222,11 @@
   color: #fff;
 }
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
 .ots-badge-primary {
   background: #fff1e7;
   color: #b54708;
@@ -230,6 +274,10 @@
     padding-top: 1rem;
   }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
   .ots-map-frame-wrap,
   .ots-map-frame {
     min-height: 260px;
@@ -243,6 +291,11 @@
     padding: 0.75rem 0.85rem;
   }
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
   .ots-timeline-item > div:last-child {
     padding-bottom: 0.25rem;
   }

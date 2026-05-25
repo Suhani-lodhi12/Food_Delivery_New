@@ -1,6 +1,15 @@
 package com.fooddelivery.backend1.service;
 
 import com.fooddelivery.backend1.dto.OrderTrackingResponse;
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+import com.fooddelivery.backend1.dto.OrderTrackingResponse;
+=======
+>>>>>>> 51974c875f20d5bb03c44be0f3765217cf54b45c
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
 import com.fooddelivery.backend1.model.CartItem;
 import com.fooddelivery.backend1.model.DeliveryAddress;
 import com.fooddelivery.backend1.model.Order;
@@ -8,12 +17,30 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.time.Duration;
+=======
+<<<<<<< HEAD
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+<<<<<<< HEAD
+import java.util.Optional;
+=======
+>>>>>>> 51974c875f20d5bb03c44be0f3765217cf54b45c
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -21,6 +48,13 @@ import java.util.concurrent.ConcurrentHashMap;
 public class OrderService {
 
     private final Map<String, List<Order>> userOrders = new ConcurrentHashMap<>();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
     private static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("hh:mm a");
     private static final List<String> DELIVERY_PARTNER_NAMES = List.of(
         "Marcus Thompson",
@@ -34,6 +68,14 @@ public class OrderService {
         "+91-9876543212",
         "+91-9876543213"
     );
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 51974c875f20d5bb03c44be0f3765217cf54b45c
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
 
     public Order createPlacedOrder(String userId,
                                    List<CartItem> cartItems,
@@ -57,11 +99,26 @@ public class OrderService {
         order.setDeliveryFee(deliveryFee);
         order.setTotal(total);
         order.setPlacedAt(LocalDateTime.now());
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
         order.setEstimatedDeliveryTime(order.getPlacedAt().plusMinutes(6));
 
         int partnerIndex = Math.abs(order.getOrderId().hashCode()) % DELIVERY_PARTNER_NAMES.size();
         order.setDeliveryPartnerName(DELIVERY_PARTNER_NAMES.get(partnerIndex));
         order.setDeliveryPartnerPhone(DELIVERY_PARTNER_PHONES.get(partnerIndex));
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 51974c875f20d5bb03c44be0f3765217cf54b45c
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
 
         userOrders.computeIfAbsent(userId, ignored -> new ArrayList<>()).add(0, order);
         return order;
@@ -70,6 +127,13 @@ public class OrderService {
     public List<Order> getOrders(String userId) {
         return userOrders.getOrDefault(userId, List.of());
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
 
     public Optional<OrderTrackingResponse> getOrderTrackingDetails(String orderId) {
         return userOrders.values().stream()
@@ -114,4 +178,12 @@ public class OrderService {
                 : order.getEstimatedDeliveryTime().format(TIME_FORMATTER));
         return response;
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 51974c875f20d5bb03c44be0f3765217cf54b45c
+>>>>>>> 75c49a666787c79357325f140732950e0709225f
+>>>>>>> d946c116c2b19c01b2641f5549cc169e277466d7
 }
